@@ -4,7 +4,7 @@ require './book'
 require './rental'
 
 class Student < Person
-  attr_accessor :classroom
+  attr_reader :classroom
 
   def initialize(classroom, age, name, parent_permission: true)
     super(age, name, parent_permission: parent_permission)
